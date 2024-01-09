@@ -1,0 +1,62 @@
+Students Table:
+student_id (Primary Key)
+first_name
+last_name
+date_of_birth
+email
+phone
+address
+city
+state
+zip_code
+Courses Table:
+course_id (Primary Key)
+course_name
+course_description
+course_credit
+Enrollments Table:
+enrollment_id (Primary Key)
+student_id (Foreign Key)
+course_id (Foreign Key)
+enrollment_date
+enrollment_status (e.g., enrolled, dropped, completed)
+Instructors Table:
+instructor_id (Primary Key)
+first_name
+last_name
+email
+phone
+Assignments Table:
+assignment_id (Primary Key)
+course_id (Foreign Key)
+instructor_id (Foreign Key)
+assignment_name
+assignment_description
+assignment_due_date
+Grades Table:
+grade_id (Primary Key)
+student_id (Foreign Key)
+assignment_id (Foreign Key)
+grade
+grade_date
+Departments Table:
+department_id (Primary Key)
+department_name
+department_description
+Majors Table:
+major_id (Primary Key)
+major_name
+major_description
+department_id (Foreign Key)
+Student_Major Table:
+student_major_id (Primary Key)
+student_id (Foreign Key)
+major_id (Foreign Key)
+start_date
+end_date
+Student_Attendance Table:
+attendance_id (Primary Key)
+student_id (Foreign Key)
+course_id (Foreign Key)
+attendance_date
+attendance_status (e.g., present, absent, tardy)
